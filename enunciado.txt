@@ -1,0 +1,47 @@
+
+Trabajo Final Objetos 1 2020
+
+Cooperadora escolar
+
+La asociación cooperadora de una escuela pública de la ciudad de La Plata necesita un sistema para registrar el pago de sus socios. Está integrada por padres, tutores o encargados de alumnos que concurren al establecimiento educacional y adquieren esta condición abonando una cuota social. Su objetivo es captar fondos para colaborar con la escuela en la consecución de sus objetivos.
+De cada alumno se conoce su nombre, DNI, el grado y la división a la que asiste, y la persona encargada del mismo que será el que figura como socio de cooperadora. Una misma persona puede estar encargada de más de un alumno. Del socio se conoce su nombre, DNI, su teléfono, y se le asigna un número de socio.
+A cada nuevo socio se le cobra por única vez una matrícula. Luego, cada mes, debe  pagar una cuota de cooperadora. De la cuota se conoce el mes al cual corresponde, y el monto. Como es un aporte voluntario, el socio decide qué mes pagar y cuando hacerlo.
+El socio dispone actualmente de tres medios de pago para poder abonar la cuota. 
+Hacerlo en el kiosco del colegio, mediante transferencia bancaria o mediante pago fácil. Cada una de estas formas de pago tiene un gasto de comisión determinado. Las cuotas que se pagan en el kiosco tienen una comisión del 15%. Las cuotas que se pagan mediante transferencia no tienen comisión y las cuotas que se pagan mediante pago fácil tienen una comisión del 10%. Esto no limita que se puedan agregar otras formas de pago en un futuro. El sistema debe considerar esto al diseñar la solución.
+El sistema debe permitir hacer un seguimiento de los pagos en cualquier momento, es decir, poder identificar los ingresos en cualquier mes, y cuales socios y cuotas fueron pagadas en ese mes.
+Asimismo, se puede aumentar el costo de la cuota sin tener que perder los montos reales ya efectuados por sus socios.
+
+Casos de uso breves
+Alta de socio.  Se indica el nombre, DNI, su teléfono, su email y los datos correspondientes al alumno. El sistema le otorga un número de socio y lo retorna.
+
+Alta de cuota. Se indica el mes de la cuota y el monto. 
+
+Consulta de pagos. Dado un socio se quiere saber cuáles son las cuotas pagadas que presenta.
+
+Pago de cuota. Para el pago de una cuota se debe ingresar el socio que quiere pagar, la cuota que desea pagar y la forma de pago. El sistema debe registrar la fecha en la cual se hizo el pago. 
+
+Calcular ingresos en un rango de fechas dada. Se deben calcular los ingresos recibidos por la cooperadora entre las dos fechas dadas. Tenga en cuenta que a los montos pagados se deben descontar las comisiones según los medios de pago utilizados.
+
+Retornar socios con la cuota al día. El sistema retorna todos los socios que tienen la cuota al día. Se considera que el socio se encuentra al día con el pago de sus cuotas si tiene paga la matrícula y todas las cuotas posteriores hasta la fecha actual.
+
+Cambiar el costo de una cuota. Frecuentemente se debe actualizar el costo de las cuotas. Tenga en cuenta que estos cambios solo deben afectar a los socios que todavía no abonaron la cuota.
+Actividades: 
+
+    a) Diseñe un modelo orientado a objetos para el problema planteado arriba expresándolo en un diagrama de clases.
+b) Implementar en Pharo la aplicación considerando los Casos de Uso enunciados y los que considere necesarios para que pueda funcionar la solución. 
+
+    c) Implemente tests de unidad para todos los métodos públicos de sus clases. Se sugiere un único paquete con dos tags: Model y Tests. 
+
+    d) Diseñe una interfaz simple para simular la ejecución de la aplicación donde se pueda observar para un socio determinado, su estado actualizado respecto a matrícula y cuotas pagas del año en curso
+
+Pautas: 
+El trabajo se puede hacer de forma individual o en grupo de 2 personas como máximo. 
+Los alumnos que decidan hacer el trabajo deben avisar por mail a los profesores, en el momento que comiencen a hacer el trabajo. 
+El límite de tiempo para realizar este trabajo es hasta mediados del año 2020, antes de que comience el 2do cuatrimestre, es decir el dictado de Objetos 1 nuevamente.
+Durante el desarrollo del trabajo los alumnos pueden consultar personalmente o por email: 
+    • Martes 11hs, Prof. ***************************************************************** 
+
+Evaluación del Trabajo: 
+Una vez terminado el trabajo los alumnos deben acordar con la profesora, la fecha de la entrega. La misma será en la semana de la mesa de finales y deben estar inscriptos para rendir el final. La evaluación es presencial y deben estar presentes todos los alumnos. 
+
+
